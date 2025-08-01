@@ -136,6 +136,11 @@
             flex-direction: column;
         }
 
+        #logo-header {
+            max-width: 160px;
+            margin-bottom: 1rem;
+        }
+
         .mdi:before,
         .mdi-set {
             /* display: flex; */
@@ -160,10 +165,14 @@
     <main class="page transparencia">
 
         <!-- Sub-header -->
-        <section id="transparencia" class="subheader bg-blue-sec">
+        <section id="transparencia" class="subheader bg-blue-sec position-sticky top-0">
             <div class="container">
                 <div class="row py-3">
                     <div class="col-12">
+                        <a href="https://hagelab.com.br/">
+                            <img src="assets/logo/hagelab-logo-white.svg" alt="Logo da HageLab" class="img-fluid mb-2"
+                                id="logo-header">
+                        </a>
                         <h2 class="text-white">Política de privacidade e proteção de dados</h2>
 
                         <nav aria-label="breadcrumb" class="m-0">
@@ -651,7 +660,18 @@
                     </article>
                 </div><!-- /.row -->
             </div><!-- /.container -->
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col-12 text-center">
+                        <a href="https://www.hagelab.com.br" class="btn btn-primary">
+                            Voltar para o site da HageLab
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
+        <!-- <section>
+        </section> -->
     </main>
 
 </body>
